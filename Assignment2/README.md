@@ -25,6 +25,8 @@ This assignment covers:
 make
 ```
 
+**Note:** This assignment uses `-std=gnu99` instead of `-std=c99` to enable POSIX extensions like `usleep()` which are commonly used in threading examples.
+
 ## Running
 ```bash
 ./thread_example

@@ -92,8 +92,7 @@ void demonstrate_struct_allocation() {
     }
     
     record->id = 101;
-    strncpy(record->name, "Sample Record", sizeof(record->name) - 1);
-    record->name[sizeof(record->name) - 1] = '\0';
+    snprintf(record->name, sizeof(record->name), "Sample Record");
     record->data = 3.14159;
     
     printf("Record ID: %d\n", record->id);
